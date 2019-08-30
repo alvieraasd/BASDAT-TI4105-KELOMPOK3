@@ -1,0 +1,26 @@
+CREATE TABLE division (
+	div_name varchar(20) NOT NULL,
+	div_code varchar(10) default NULL,
+PRIMARY KEY (div_code)
+)
+
+CREATE TABLE employee (
+	div_name varchar (20) NOT NULL,
+	id_card varchar (10) NOT NULL,
+	div_code varchar(10) NOT NULL,
+PRIMARY KEY (id_card)
+)
+
+CREATE TABLE member_card (
+	div_name varchar(20) default NULL,
+	id_card varchar(10) NOT NULL,
+	Age varchar (10) DEFAULT NULL,
+	gender varchar(10) DEFAULT NULL,
+PRIMARY KEY (id_card)
+)
+
+CREATE TABLE rfid_machine (
+	id_card varchar (10) NOT NULL,
+	div_name varchar(20) NOT NULL,
+PRIMARY KEY (id_card)
+)
